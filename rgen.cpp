@@ -211,7 +211,7 @@ int main(int argc, char * argv[]) {
 
 			for (j; j < street_segement; j++) {
 				Point vertex = { GenerateCoord(coord_limit), GenerateCoord(coord_limit) };
-				street_def[j] = vertex;
+				pointer[j] = vertex;
 			}
 
 			while (IsValid(street_def, j) == false) {
@@ -223,7 +223,7 @@ int main(int argc, char * argv[]) {
 				j = 0;
 				for (j; j < street_segement; j++) {
 					Point vertex = { GenerateCoord(coord_limit), GenerateCoord(coord_limit) };
-					street_def[j] = vertex;
+					pointer[j] = vertex;
 				}
 
 			}
